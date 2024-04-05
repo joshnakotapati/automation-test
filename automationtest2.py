@@ -13,6 +13,7 @@ driver.get("https://www.yatra.com/")
 driver.maximize_window()
 time.sleep(2)
 
+
 el = driver.find_element(By.XPATH,"//span[@class='more-arr']")
 AC(driver).move_to_element(el).perform()
 p_w = driver.current_window_handle
